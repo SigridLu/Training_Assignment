@@ -49,8 +49,15 @@ SELECT c2.City
 FROM Customers c1, Customers c2
 WHERE c1.City = c2.City AND c1.CustomerID != c2.CustomerID
 
-SELECT *
-FROM Customers
+select city from Customers
+except
+select city from customers
+group by city
+having COUNT(*)=1
+union 
+select city from customers
+group by city
+having COUNT(*)=0
 
 -- 5b.
 SELECT City
@@ -89,10 +96,18 @@ WHERE od.OrderID = o.OrderID AND o.CustomerID = c.CustomerID
 ORDER BY SUM(Quantity) OVER(PARTITION BY ProductID) DESC, COUNT(Quantity) OVER(PARTITION BY City) DESC
 */
 
+
+
 -- 9a.
 SELECT City
 FROM Employees 
 WHERE City NOT IN (SELECT ShipCity FROM Orders)
+
+-- Lynn's Solution
+select distinct City 
+from Employees 
+where city not in (select ShipCity from Orders where ShipCity is not null)
+
 
 -- 9b. 
 SELECT City
@@ -114,6 +129,13 @@ WHERE o.OrderID = od.OrderID
 ORDER BY SUM(od.Quantity) OVER(PARTITION BY od.ProductID) DESC) c2
 ON c1.ShipCity = c2.ShipCity
 
+-- Lynn's Solution for which question 8/10?
+select (select top 1 City from Orders o join [Order Details] od on o.OrderID=od.OrderID join Employees e on e.EmployeeID = o.EmployeeID
+group by e.EmployeeID,e.City
+order by COUNT(*) desc) as MostOrderedCity,
+(select top 1 City from Orders o join [Order Details] od on o.OrderID=od.OrderID join Employees e on e.EmployeeID = o.EmployeeID
+group by e.EmployeeID,e.City
+order by sum(Quantity) desc) as MostQunatitySoldCity
 -- 11.
 /*
 One technique is by using CTE to identify the duplicates record with ROW_NUMBER function.

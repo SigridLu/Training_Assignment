@@ -1,0 +1,48 @@
+﻿HW5: 3/27
+Editor: Yun Lu
+/*******************************************************/
+
+1. What type would you choose for the following “numbers”?
+String phoneNum;
+int height;
+int age;
+enum gender{ Male, Female, Unspecified}
+float salary;
+String ISBN;
+float price;
+double shipWeight;
+uint population;
+ulong numOfStars;
+ushort numOfEmployees;
+
+
+2. What are the difference between value type and reference type variables?
+   Ans: Value type stores its own data on stack while reference type stores a reference to the data in heap.
+        Because value type holds itself in memory, if it is assigned to other variable, it make a copy of data on stack without affecting the original value.
+        As for reference type, multiple reference variables can be assigned the same reference to a data simaltaniously.
+        When modifying the data using any such reference variable, it has direct impact on any other reference variables point to the same data.
+
+3. What happens when you divide an int variable by 0?
+   Ans: Compile time error might occure because integer don'r have IsInfinity method in place.
+
+4. What happens when you divide a double variable by 0?
+   Ans: Because floating-point types can represent infinity and NaN,
+        if we replace constant 1 divide by zero to 1.0f or 1.0d dicide by zero (See in IEEE 754),
+        the result would be Infinity which technically doesn't throw exceptions.
+
+5. What happens when you overflow an int variable, that is, set it to a value beyond its range?
+   Ans: By default, no exception throw back upon arithmetic overflow. But it might returns an unexpected output.
+        We can use checked keyword to trigger OverflowException.
+
+6. What is the difference between x = y++; and x = ++y;?
+   Ans: In the first statement presents a post increment on y, the original y value will be assigned to x and then increment itself by one afterwards.
+        The next statement presents a pre increment on y. As a result, x will be assigned an incremented y so does y itself. And x == y
+
+7. What is the difference between break, continue, and return when used inside a loop statement?
+   Ans: Break statement terminates the loop.
+        continue statement starts a new iteration.
+        Return statement also terminates the loop and returns the control to the caller.
+
+8. What are the three parts of a for statement and which of them are required?
+   Ans: They are the keyword to start the loop, the condition tested before each iteration starts, and the keyword to end the loop.
+        None of them are required. for(;;) is the same as while(1). 
