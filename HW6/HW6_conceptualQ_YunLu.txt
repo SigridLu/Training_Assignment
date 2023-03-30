@@ -1,0 +1,106 @@
+﻿HW6: 3/28
+Editor: Yun Lu
+/*******************************************************/
+
+1.What are the six combinations of access modifier keywords and what do they do?
+Ans: They represent the level of ability for a derived/non-derived class inside/outside the project scope to access the member in the base class.
+     They are:
+        public type member can be accessed through anywhere in and even outside another project.
+        private type member can only be accessed in the same class that initially declares it.
+        protected type member can be accessed by the same class that initially declares it or its derived class in/outside another project.
+        internal type member can be accessed anywhere in the same project.
+        protected internal type member can be accessed anywhere in the same project or the derived class from other projects.
+        private protected type member accessed by the same class that initially declares it or the derived class in the same project.
+
+    The accessibility level order: public > protected internal > protected, internal > private protected > private.
+
+2.What is the difference between the static, const, and readonly keywords when applied to a type member?
+Ans: Static member is an object that its space gets allocated for the entire execution of program.
+     Const varaible must be assigned a value at compile time and cannot be changed afterwards. It is by default a static type.
+     Readonly filed can be initialized either at the time of declaration or within the constructor of the same class.
+     Therefore, readonly fields can be used for run-time constants.
+
+3. What does a constructor do?
+Ans: A constructor helps the object creation from a class and initiates values for the attributes in class.
+
+4. Why is the partial keyword useful?
+Ans: Partial keyword allows a class/struct/interface source code to split into parts across different files and commbine as a whole during runtime.
+     That means later on we can add more functionalities without messing up inheritance and reconstruct the code.
+      
+5. What is a tuple?
+Ans: Tuple is a data structure that holds different types of data together as a variable.
+
+6. What does the C# record keyword do?
+Ans: It use to define a reference type that stores data members.
+     Unlike class defines the behaviors of its members, record class only retains values of its members.
+
+7. What does overloading and overriding mean?
+Ans: Overloading occurs when the functions in the same scope (class) share the same name but with different parameter numbers and/or types.
+     Overriding occurs when the function from the derived class inherits the name but redefined the virtual/abstract function implementation in the base class.
+
+8. What is the difference between a field and a property?
+Ans: Field stores the actual data in a class and always declared as private without any exposure outside of the class.
+     Property, on the other hand, wraps the field to give the outside world the ability to change the field values.
+
+9. How do you make a method parameter optional?
+Ans: There are four ways to make it happens:
+     1. Assgin a default value to the parameter, and this kind of parameter should always be the last in paramter list.
+        If there's a value pass to it, it uses the passed value. otherwize, it uses the default value.
+     2. Overload method with the same method name and different types/numbers of parameters.
+     3. Use '[Optional]' attribute before parameter. It set the default optional paramter value to zero.
+     4. Use 'params' keyword before parameter. It pass any variable numbers of parameters, but can only contains one params at the end of paramter list.
+
+10. What is an interface and how is it different from abstract class?
+Ans: The purpose of creating interface is to share the methods across classes that have same implementations.
+     So interface is a contract that declares a list of always public methods without implementations.
+     It does not have contructor nor static members, that is, it cannot be instantiate as an object.
+     Any class uses such interface should fully implement its methods and can inherit multiple interfaces simultaniously.
+
+     As for Abstract, itself is a class, but opens up for derived class to override its abstract method and provide implementations.
+     An abstract class should at least contains one abstract method for later overridden happens.
+     Because it's a class, it can contains constructor, concrete methods and static members, but also cannot be instantiate as an object.
+     Any of its derived class can decide whether to override the abstract method, but should only inherit one abstract class at a time.
+     
+
+11. What accessibility level are members of an interface?
+Ans: Should be public.
+
+12. True/False. Polymorphism allows derived classes to provide different implementations of the same method.
+Ans: True.
+
+13. True/False. The override keyword is used to indicate that a method in a derived class is providing its own implementation of a method.
+Ans: True.
+
+14. True/False. The new keyword is used to indicate that a method in a derived class is providing its own implementation of a method.
+Ans: False.
+
+15. True/False. Abstract methods can be used in a normal (non-abstract) class.
+Ans: False.
+
+16. True / False. Normal(non-abstract) methods can be used in an abstract class.
+Ans: True.
+
+17.True / False. Derived classes can override methods that were virtual in the base class.
+Ans: True.
+
+18.True / False. Derived classes can override methods that were abstract in the base class.
+Ans: True.
+
+19.True / False. In a derived class, you can override a method that was neither virtual non abstract in the base class.
+Ans: False.
+
+20.True / False. A class that implements an interface does not have to provide an implementation for all of the members of the interface.
+Ans: True.
+
+21.True / False. A class that implements an interface is allowed to have other members that aren’t defined in the interface.
+Ans: True.
+
+22.True / False. A class can have more than one base class.
+Ans: False.
+
+23.True / False. A class can implement more than one interface. What is meant by the terms managed resource and unmanaged resource in .NET
+Ans: True.
+     Managed resource is directly under control of Garbage Collector in .NET, while unmanaged resource is not.
+
+24. What's the purpose of Garbage Collector in .NET?
+Ans: It's an optimization technique for performance purpose. It manage the allocation and deallocation for the program.
