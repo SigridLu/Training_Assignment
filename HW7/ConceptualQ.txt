@@ -1,0 +1,39 @@
+﻿1. Describe the problem generics address.
+   Ans: Suppose we're implementing stack data structure that accepts int, float, and bool data types.
+   Without generic in place, we need to implement three versions of Push method that inserts an element on stack.
+   As a result, it cause a lot of pain to maintain the code and that violates the DRY design pattern as well.
+
+   Also, a single stack cannot accept elements with more than one data type
+   and upcasting doesn't guarantee the insertion element to be the same data type as stack does.
+   So even upcasting cannot solve the problem in this context.
+   
+   That's why generics which has no specific data type steps in to replace these three data types.
+   It wraps up the Push method into a single implementation that can be used in int, float, and bool scenarios.
+
+2. How would you create a list of strings, using the generic List class?
+   Ans: List<string> str = new List<string>();
+
+3. How many generic type parameters does the Dictionary class have?
+   Ans: Two, one is key and another is value.
+
+4. True/False. When a generic class has multiple type parameters, they must all match.
+   Ans: False.
+
+5. What method is used to add items to a List object?
+   Ans: str.Add("item");
+
+6. Name two methods that cause items to be removed from a List.
+   Ans: RemoveAt(int index), RemoveRange(int index, int count)
+
+7. How do you indicate that a class has a generic type parameter?
+   Ans: generic type parameters are wraped with '<>' symbol.
+
+8. True/False. Generic classes can only have one generic type parameter.
+   Ans: False.
+
+9. True/False. Generic type constraints limit what can be used for the generic type.
+   Ans: True.
+   
+10. True/False. Constraints let you use the methods of the thing you are constraining to.
+   Ams: True.
+
