@@ -1,0 +1,15 @@
+/Users/sigridlu/Desktop/Files/Antra/C#/HW8/bin/Debug/net6.0/HW8
+/Users/sigridlu/Desktop/Files/Antra/C#/HW8/bin/Debug/net6.0/HW8.deps.json
+/Users/sigridlu/Desktop/Files/Antra/C#/HW8/bin/Debug/net6.0/HW8.runtimeconfig.json
+/Users/sigridlu/Desktop/Files/Antra/C#/HW8/bin/Debug/net6.0/HW8.dll
+/Users/sigridlu/Desktop/Files/Antra/C#/HW8/bin/Debug/net6.0/HW8.pdb
+/Users/sigridlu/Desktop/Files/Antra/C#/HW8/obj/Debug/net6.0/HW8.csproj.AssemblyReference.cache
+/Users/sigridlu/Desktop/Files/Antra/C#/HW8/obj/Debug/net6.0/HW8.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sigridlu/Desktop/Files/Antra/C#/HW8/obj/Debug/net6.0/HW8.AssemblyInfoInputs.cache
+/Users/sigridlu/Desktop/Files/Antra/C#/HW8/obj/Debug/net6.0/HW8.AssemblyInfo.cs
+/Users/sigridlu/Desktop/Files/Antra/C#/HW8/obj/Debug/net6.0/HW8.csproj.CoreCompileInputs.cache
+/Users/sigridlu/Desktop/Files/Antra/C#/HW8/obj/Debug/net6.0/HW8.dll
+/Users/sigridlu/Desktop/Files/Antra/C#/HW8/obj/Debug/net6.0/refint/HW8.dll
+/Users/sigridlu/Desktop/Files/Antra/C#/HW8/obj/Debug/net6.0/HW8.pdb
+/Users/sigridlu/Desktop/Files/Antra/C#/HW8/obj/Debug/net6.0/HW8.genruntimeconfig.cache
+/Users/sigridlu/Desktop/Files/Antra/C#/HW8/obj/Debug/net6.0/ref/HW8.dll
