@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Contracts\" />
+    <None Remove="Contracts\Repositories\" />
+    <None Remove="Contracts\Services\" />
+    <None Remove="Exceptions\" />
+    <None Remove="Models\" />
+    <None Remove="Entities\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Contracts\" />
+    <Folder Include="Contracts\Repositories\" />
+    <Folder Include="Contracts\Services\" />
+    <Folder Include="Exceptions\" />
+    <Folder Include="Models\" />
+    <Folder Include="Entities\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+    <PackageReference Include="Dapper" Version="2.0.123" />
+  </ItemGroup>
+</Project>
