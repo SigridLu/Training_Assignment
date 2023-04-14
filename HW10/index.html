@@ -17,14 +17,81 @@
             <a href="./contact.html" class="w3-bar-item w3-button w3-border-right">Contact Info</a>
             <a href="./pun.html" class="w3-bar-item w3-button w3-border-right">Pun of the day</a>
         </div>
-        <div class="main w3-content w3-display-container w3-center">
-            <div class="banner">
-                <div class="banner-content intro">
-                    <h1>About Me</h1>
-                    <p>Hello! I'm Yun. Nice to meet you all!</p>
+
+        <div class="banner">
+            <div class="main w3-display-container w3-center">
+                <div class="banner-content intro"></div>
+                    <h1 class="title">About Me</h1>
+                    <div class="content">
+                        <p>Hello and welcome! I am Yun Lu.</p>
+                        <p>I am a software engineer with experience in web/application development.</p>
+                        <p>I recently earned a Master's Degree in Computer Science from Clemson University.</p>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <div class="specialty">
+            <div class="title" id="specialtyTitle">
+                <h2 style="text-align:center">Specialty</h2>
+            </div>
+            <div class="content">
+                <div class="row">
+                    <div class="column">
+                      <div class="card">
+                        <div class="container">
+                          <h2>Web Development</h2>
+                          <p class="title">MeTube multimedia System</p>
+                          <p>Some text that describes project.</p>
+                          <p></p>
+                          <p><button class="button" onclick="myFunction()">See Details</button></p>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <div class="column">
+                      <div class="card">
+                        <div class="container">
+                          <h2>Android Application Development</h2>
+                          <p class="title">Shaker Focus</p>
+                          <p>Some text that describes project.</p>
+                          <p></p>
+                          <p><button class="button" onclick="myFunction()">See Details</button></p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="column">
+                      <div class="card">
+                        <!--<img src="/w3images/team3.jpg" alt="John" style="width:100%">-->
+                        <div class="container">
+                          <h2>Malware Analysis</h2>
+                          <p class="title">IDA Pro</p>
+                          <p>Some text that describes project.</p>
+                          <p></p>
+                          <p><button class="button" onclick="myFunction()">See Details</button></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <script>
+            function myFunction() {
+                alert("Project is not ready! \n Change the text color instead!");
+                let button = document.getElementById("specialtyTitle");
+                let color = button.style.color;
+                button.style.color = "Purple";
+                /*if (color == "Purple"){
+                    button.style.color = "Black";
+                    alert("purple");
+                }
+                    
+                else {
+                    button.style.color = "Purple";
+                } */      
+            }
+        </script>
     </div>
 </body>
 </html>

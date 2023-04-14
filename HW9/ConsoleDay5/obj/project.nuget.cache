@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FFV8mzm85yqCK81Nha8Zq8P4vW7Dt4yoLygMNTo7duyY0eJgbTDiThw/WMfDWAHSQNpTXARxgxNDflvaJyt+8w==",
-  "success": false,
-  "projectFilePath": "/Users/sigridlu/Desktop/Files/Antra/HW/HW9/ConsoleDay5/ConsoleDay5Presentation.csproj",
+  "dgSpecHash": "6wKWNG/RWj73xLbrbB/C0gJFtgkLA2mTqyMAjRzXsbeHdXgMuukNRi0QnWlG8FyDuJerbhOintr4AGll9AsVsg==",
+  "success": true,
+  "projectFilePath": "/Users/sigridlu/Desktop/Files/Antra/C#/ConsoleDay5/ConsoleDay5Presentation.csproj",
   "expectedPackageFiles": [
     "/Users/sigridlu/.nuget/packages/dapper/2.0.123/dapper.2.0.123.nupkg.sha512",
     "/Users/sigridlu/.nuget/packages/microsoft.netcore.platforms/3.1.0/microsoft.netcore.platforms.3.1.0.nupkg.sha512",
@@ -15,24 +15,5 @@
     "/Users/sigridlu/.nuget/packages/system.security.accesscontrol/4.7.0/system.security.accesscontrol.4.7.0.nupkg.sha512",
     "/Users/sigridlu/.nuget/packages/system.security.principal.windows/4.7.0/system.security.principal.windows.4.7.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1105",
-      "level": "Error",
-      "message": "Unable to find project information for '/Users/sigridlu/Desktop/Files/Antra/HW/HW9/ConsoleAppDay5ApplicationCore/ConsoleAppDay5ApplicationCore.csproj'. If you are using Visual Studio, this may be because the project is unloaded or not part of the current solution so run a restore from the command-line. Otherwise, the project file may be invalid or missing targets required for restore.",
-      "libraryId": "/Users/sigridlu/Desktop/Files/Antra/HW/HW9/ConsoleAppDay5ApplicationCore/ConsoleAppDay5ApplicationCore.csproj",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    },
-    {
-      "code": "NU1105",
-      "level": "Error",
-      "message": "Unable to find project information for '/Users/sigridlu/Desktop/Files/Antra/HW/HW9/ConsoleAppDay5Infrastructure/ConsoleAppDay5Infrastructure.csproj'. If you are using Visual Studio, this may be because the project is unloaded or not part of the current solution so run a restore from the command-line. Otherwise, the project file may be invalid or missing targets required for restore.",
-      "libraryId": "/Users/sigridlu/Desktop/Files/Antra/HW/HW9/ConsoleAppDay5Infrastructure/ConsoleAppDay5Infrastructure.csproj",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  "logs": []
 }

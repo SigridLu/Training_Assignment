@@ -159,6 +159,35 @@
             "rid": "win"
           }
         }
+      },
+      "ConsoleAppDay5ApplicationCore/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Dapper": "2.0.123",
+          "System.Data.SqlClient": "4.8.5"
+        },
+        "compile": {
+          "bin/placeholder/ConsoleAppDay5ApplicationCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ConsoleAppDay5ApplicationCore.dll": {}
+        }
+      },
+      "ConsoleAppDay5Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "ConsoleAppDay5ApplicationCore": "1.0.0",
+          "Dapper": "2.0.123",
+          "System.Data.SqlClient": "4.8.5"
+        },
+        "compile": {
+          "bin/placeholder/ConsoleAppDay5Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ConsoleAppDay5Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -493,12 +522,21 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "ConsoleAppDay5ApplicationCore/1.0.0": {
+      "type": "project",
+      "path": "../ConsoleAppDay5ApplicationCore/ConsoleAppDay5ApplicationCore.csproj",
+      "msbuildProject": "../ConsoleAppDay5ApplicationCore/ConsoleAppDay5ApplicationCore.csproj"
+    },
+    "ConsoleAppDay5Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../ConsoleAppDay5Infrastructure/ConsoleAppDay5Infrastructure.csproj",
+      "msbuildProject": "../ConsoleAppDay5Infrastructure/ConsoleAppDay5Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "/Users/sigridlu/Desktop/Files/Antra/HW/HW9/ConsoleAppDay5ApplicationCore/ConsoleAppDay5ApplicationCore.csproj",
-      "/Users/sigridlu/Desktop/Files/Antra/HW/HW9/ConsoleAppDay5Infrastructure/ConsoleAppDay5Infrastructure.csproj",
+      "ConsoleAppDay5Infrastructure >= 1.0.0",
       "Dapper >= 2.0.123",
       "System.Data.SqlClient >= 4.8.5"
     ]
@@ -509,11 +547,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/sigridlu/Desktop/Files/Antra/HW/HW9/ConsoleDay5/ConsoleDay5Presentation.csproj",
+      "projectUniqueName": "/Users/sigridlu/Desktop/Files/Antra/C#/ConsoleDay5/ConsoleDay5Presentation.csproj",
       "projectName": "ConsoleDay5Presentation",
-      "projectPath": "/Users/sigridlu/Desktop/Files/Antra/HW/HW9/ConsoleDay5/ConsoleDay5Presentation.csproj",
+      "projectPath": "/Users/sigridlu/Desktop/Files/Antra/C#/ConsoleDay5/ConsoleDay5Presentation.csproj",
       "packagesPath": "/Users/sigridlu/.nuget/packages/",
-      "outputPath": "/Users/sigridlu/Desktop/Files/Antra/HW/HW9/ConsoleDay5/obj/",
+      "outputPath": "/Users/sigridlu/Desktop/Files/Antra/C#/ConsoleDay5/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/sigridlu/.nuget/NuGet/NuGet.Config"
@@ -529,11 +567,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/Users/sigridlu/Desktop/Files/Antra/HW/HW9/ConsoleAppDay5ApplicationCore/ConsoleAppDay5ApplicationCore.csproj": {
-              "projectPath": "/Users/sigridlu/Desktop/Files/Antra/HW/HW9/ConsoleAppDay5ApplicationCore/ConsoleAppDay5ApplicationCore.csproj"
-            },
-            "/Users/sigridlu/Desktop/Files/Antra/HW/HW9/ConsoleAppDay5Infrastructure/ConsoleAppDay5Infrastructure.csproj": {
-              "projectPath": "/Users/sigridlu/Desktop/Files/Antra/HW/HW9/ConsoleAppDay5Infrastructure/ConsoleAppDay5Infrastructure.csproj"
+            "/Users/sigridlu/Desktop/Files/Antra/C#/ConsoleAppDay5Infrastructure/ConsoleAppDay5Infrastructure.csproj": {
+              "projectPath": "/Users/sigridlu/Desktop/Files/Antra/C#/ConsoleAppDay5Infrastructure/ConsoleAppDay5Infrastructure.csproj"
             }
           }
         }
@@ -576,25 +611,5 @@
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1105",
-      "level": "Error",
-      "message": "Unable to find project information for '/Users/sigridlu/Desktop/Files/Antra/HW/HW9/ConsoleAppDay5ApplicationCore/ConsoleAppDay5ApplicationCore.csproj'. If you are using Visual Studio, this may be because the project is unloaded or not part of the current solution so run a restore from the command-line. Otherwise, the project file may be invalid or missing targets required for restore.",
-      "libraryId": "/Users/sigridlu/Desktop/Files/Antra/HW/HW9/ConsoleAppDay5ApplicationCore/ConsoleAppDay5ApplicationCore.csproj",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    },
-    {
-      "code": "NU1105",
-      "level": "Error",
-      "message": "Unable to find project information for '/Users/sigridlu/Desktop/Files/Antra/HW/HW9/ConsoleAppDay5Infrastructure/ConsoleAppDay5Infrastructure.csproj'. If you are using Visual Studio, this may be because the project is unloaded or not part of the current solution so run a restore from the command-line. Otherwise, the project file may be invalid or missing targets required for restore.",
-      "libraryId": "/Users/sigridlu/Desktop/Files/Antra/HW/HW9/ConsoleAppDay5Infrastructure/ConsoleAppDay5Infrastructure.csproj",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  }
 }

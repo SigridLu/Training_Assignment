@@ -8,10 +8,9 @@
     ".NETCoreApp,Version=v6.0": {
       "ConsoleDay5Presentation/1.0.0": {
         "dependencies": {
+          "ConsoleAppDay5Infrastructure": "1.0.0",
           "Dapper": "2.0.123",
-          "System.Data.SqlClient": "4.8.5",
-          "ConsoleAppDay5ApplicationCore": "1.0.0.0",
-          "ConsoleAppDay5Infrastructure": "1.0.0.0"
+          "System.Data.SqlClient": "4.8.5"
         },
         "runtime": {
           "ConsoleDay5Presentation.dll": {}
@@ -100,20 +99,23 @@
         }
       },
       "System.Security.Principal.Windows/4.7.0": {},
-      "ConsoleAppDay5ApplicationCore/1.0.0.0": {
+      "ConsoleAppDay5ApplicationCore/1.0.0": {
+        "dependencies": {
+          "Dapper": "2.0.123",
+          "System.Data.SqlClient": "4.8.5"
+        },
         "runtime": {
-          "ConsoleAppDay5ApplicationCore.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "ConsoleAppDay5ApplicationCore.dll": {}
         }
       },
-      "ConsoleAppDay5Infrastructure/1.0.0.0": {
+      "ConsoleAppDay5Infrastructure/1.0.0": {
+        "dependencies": {
+          "ConsoleAppDay5ApplicationCore": "1.0.0",
+          "Dapper": "2.0.123",
+          "System.Data.SqlClient": "4.8.5"
+        },
         "runtime": {
-          "ConsoleAppDay5Infrastructure.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "ConsoleAppDay5Infrastructure.dll": {}
         }
       }
     }
@@ -194,13 +196,13 @@
       "path": "system.security.principal.windows/4.7.0",
       "hashPath": "system.security.principal.windows.4.7.0.nupkg.sha512"
     },
-    "ConsoleAppDay5ApplicationCore/1.0.0.0": {
-      "type": "reference",
+    "ConsoleAppDay5ApplicationCore/1.0.0": {
+      "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "ConsoleAppDay5Infrastructure/1.0.0.0": {
-      "type": "reference",
+    "ConsoleAppDay5Infrastructure/1.0.0": {
+      "type": "project",
       "serviceable": false,
       "sha512": ""
     }

@@ -1,17 +1,81 @@
 {
   "format": 1,
   "restore": {
-    "/Users/sigridlu/Desktop/Files/Antra/HW/HW9/ConsoleDay5/ConsoleDay5Presentation.csproj": {}
+    "/Users/sigridlu/Desktop/Files/Antra/C#/ConsoleDay5/ConsoleDay5Presentation.csproj": {}
   },
   "projects": {
-    "/Users/sigridlu/Desktop/Files/Antra/HW/HW9/ConsoleDay5/ConsoleDay5Presentation.csproj": {
+    "/Users/sigridlu/Desktop/Files/Antra/C#/ConsoleAppDay5ApplicationCore/ConsoleAppDay5ApplicationCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/sigridlu/Desktop/Files/Antra/HW/HW9/ConsoleDay5/ConsoleDay5Presentation.csproj",
-        "projectName": "ConsoleDay5Presentation",
-        "projectPath": "/Users/sigridlu/Desktop/Files/Antra/HW/HW9/ConsoleDay5/ConsoleDay5Presentation.csproj",
+        "projectUniqueName": "/Users/sigridlu/Desktop/Files/Antra/C#/ConsoleAppDay5ApplicationCore/ConsoleAppDay5ApplicationCore.csproj",
+        "projectName": "ConsoleAppDay5ApplicationCore",
+        "projectPath": "/Users/sigridlu/Desktop/Files/Antra/C#/ConsoleAppDay5ApplicationCore/ConsoleAppDay5ApplicationCore.csproj",
         "packagesPath": "/Users/sigridlu/.nuget/packages/",
-        "outputPath": "/Users/sigridlu/Desktop/Files/Antra/HW/HW9/ConsoleDay5/obj/",
+        "outputPath": "/Users/sigridlu/Desktop/Files/Antra/C#/ConsoleAppDay5ApplicationCore/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/sigridlu/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/sigridlu/Desktop/Files/Antra/C#/ConsoleAppDay5Infrastructure/ConsoleAppDay5Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/sigridlu/Desktop/Files/Antra/C#/ConsoleAppDay5Infrastructure/ConsoleAppDay5Infrastructure.csproj",
+        "projectName": "ConsoleAppDay5Infrastructure",
+        "projectPath": "/Users/sigridlu/Desktop/Files/Antra/C#/ConsoleAppDay5Infrastructure/ConsoleAppDay5Infrastructure.csproj",
+        "packagesPath": "/Users/sigridlu/.nuget/packages/",
+        "outputPath": "/Users/sigridlu/Desktop/Files/Antra/C#/ConsoleAppDay5Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/sigridlu/.nuget/NuGet/NuGet.Config"
@@ -27,11 +91,76 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/sigridlu/Desktop/Files/Antra/HW/HW9/ConsoleAppDay5ApplicationCore/ConsoleAppDay5ApplicationCore.csproj": {
-                "projectPath": "/Users/sigridlu/Desktop/Files/Antra/HW/HW9/ConsoleAppDay5ApplicationCore/ConsoleAppDay5ApplicationCore.csproj"
-              },
-              "/Users/sigridlu/Desktop/Files/Antra/HW/HW9/ConsoleAppDay5Infrastructure/ConsoleAppDay5Infrastructure.csproj": {
-                "projectPath": "/Users/sigridlu/Desktop/Files/Antra/HW/HW9/ConsoleAppDay5Infrastructure/ConsoleAppDay5Infrastructure.csproj"
+              "/Users/sigridlu/Desktop/Files/Antra/C#/ConsoleAppDay5ApplicationCore/ConsoleAppDay5ApplicationCore.csproj": {
+                "projectPath": "/Users/sigridlu/Desktop/Files/Antra/C#/ConsoleAppDay5ApplicationCore/ConsoleAppDay5ApplicationCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/sigridlu/Desktop/Files/Antra/C#/ConsoleDay5/ConsoleDay5Presentation.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/sigridlu/Desktop/Files/Antra/C#/ConsoleDay5/ConsoleDay5Presentation.csproj",
+        "projectName": "ConsoleDay5Presentation",
+        "projectPath": "/Users/sigridlu/Desktop/Files/Antra/C#/ConsoleDay5/ConsoleDay5Presentation.csproj",
+        "packagesPath": "/Users/sigridlu/.nuget/packages/",
+        "outputPath": "/Users/sigridlu/Desktop/Files/Antra/C#/ConsoleDay5/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/sigridlu/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/sigridlu/Desktop/Files/Antra/C#/ConsoleAppDay5Infrastructure/ConsoleAppDay5Infrastructure.csproj": {
+                "projectPath": "/Users/sigridlu/Desktop/Files/Antra/C#/ConsoleAppDay5Infrastructure/ConsoleAppDay5Infrastructure.csproj"
               }
             }
           }

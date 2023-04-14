@@ -18,6 +18,7 @@ namespace ConsoleDay5Presentation
 		{
             while (true)
             {
+                FirstStep:
                 var e_choice = EntityChoice();
                 if (e_choice == "d")
                 {
@@ -41,6 +42,8 @@ namespace ConsoleDay5Presentation
                             break;
                         case 6:
                             return;
+                        case 7:
+                            goto FirstStep;
                         default:
                             Console.WriteLine("Invalid number! Please try again.");
                             break;
@@ -68,11 +71,15 @@ namespace ConsoleDay5Presentation
                             break;
                         case 6:
                             return;
+                        case 7:
+                            goto FirstStep;
                         default:
                             Console.WriteLine("Invalid number! Please try again.");
                             break;
                     }
                 }
+                else if (e_choice == "q")
+                    return;
                 else
                     Console.WriteLine("Invalid selection! Please try again.");
             }
@@ -84,9 +91,15 @@ namespace ConsoleDay5Presentation
 		{
             Console.WriteLine("Enter d to interact with department data: ");
             Console.WriteLine("Enter e to interact with employee data: ");
-            var choice = Console.ReadLine();
+            Console.WriteLine("Enter q to quit the program");
+            string choice = "";
+            try {
+                choice = Console.ReadLine();
+            } catch (Exception ex) {
+                Console.WriteLine("Exception found in first step: " + ex);
+            }
             return choice;
-		}
+        }
 
         // input number 1 to 6 for interaction with selected entity
         public int ActionChoice(string entity)
@@ -97,8 +110,16 @@ namespace ConsoleDay5Presentation
             Console.WriteLine($"Enter 4 to update {entity}: ");
             Console.WriteLine($"Enter 5 to get {entity} by id: ");
             Console.WriteLine("Enter 6 to exit program: ");
-
-            var choice = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter 7 to go back to last step" + "/n");
+            int choice = 0;
+            try
+            {
+                choice = Convert.ToInt32(Console.ReadLine());
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Exception found in second step: " + ex + "/n");
+            }
             return choice;
         }
 	}
